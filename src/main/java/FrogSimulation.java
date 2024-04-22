@@ -20,12 +20,12 @@ public class FrogSimulation
 		while(hops < maxHops){
 			dist = dist + hopDistance();
 			hops++;
-		}
-		if(dist < 0){
-			return false;
-		}
-		else if(dist >= goalDistance){
-			return true;
+			if(dist < 0){
+				return false;
+			}
+			else if(dist >= goalDistance){
+				return true;
+			}
 		}
 		return false;
 	}
