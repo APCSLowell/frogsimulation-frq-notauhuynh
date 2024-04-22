@@ -29,7 +29,7 @@ public class FrogSimulation
 	{ 
 		double wins = 0;
 		for(int i = 0; i < num; i++){
-			if(simulate()){
+			if(simulate() == true){
 			 wins++;
 			}
 		}
